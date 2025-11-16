@@ -1,0 +1,686 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Owner Guide - PetCare Hub Academy</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Transform pet ownership anxiety into confidence with our comprehensive New Owner Academy. Species-specific guides, checklists, and expert support for new pet parents.">
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpetcarehu8300back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background">
+    <!-- Emergency Quick Access Bar -->
+    <div class="bg-error-500 text-white py-2 px-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm font-medium">Pet Emergency? Get immediate help</span>
+            </div>
+            <a href="emergency_care_guide.html" class="bg-white text-error-500 px-4 py-1 rounded-full text-sm font-semibold hover:bg-error-50 transition-colors">
+                Emergency Guide
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-soft sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                    <span class="ml-2 text-2xl font-inter font-bold text-primary">PetCare Hub</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="new_owner_guide.html" class="text-primary font-semibold border-b-2 border-primary pb-1">New Owner Guide</a>
+                    <a href="food_nutrition_center.html" class="text-text-secondary hover:text-primary transition-colors">Nutrition</a>
+                    <a href="environment_setup.html" class="text-text-secondary hover:text-primary transition-colors">Environment</a>
+                    <a href="health_care_essentials.html" class="text-text-secondary hover:text-primary transition-colors">Health Care</a>
+                    <div class="flex items-center space-x-4">
+                       <!---- <button class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-accent-600 transition-colors">
+                            Join Community
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h1 class="text-4xl md:text-5xl font-inter font-bold text-text-primary mb-6">
+                    New Owner Academy
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto leading-relaxed">
+                    Transform pet ownership anxiety into confident care with our comprehensive, species-specific guides designed for first-time pet parents.
+                </p>
+            </div>
+
+            <!-- Progress Indicator -->
+            <div class="bg-white rounded-2xl shadow-gentle p-6 max-w-4xl mx-auto">
+                <div class="flex items-center justify-between mb-4">
+                    <h3 class="text-lg font-inter font-semibold text-text-primary">Your Learning Journey</h3>
+                    <span class="text-sm text-text-secondary">Step 1 of 5</span>
+                </div>
+                <div class="w-full bg-gray-200 rounded-full h-3">
+                    <div class="bg-primary h-3 rounded-full transition-all duration-300" style="width: 20%"></div>
+                </div>
+                <div class="flex justify-between mt-3 text-sm text-text-secondary">
+                    <span class="text-primary font-semibold">Choose Pet</span>
+                    <span>Essentials</span>
+                    <span>Setup</span>
+                    <span>First Week</span>
+                    <span>Ongoing Care</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Species Selection Wizard -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Choose Your Pet Type
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Select your pet type to receive personalized care guides, checklists, and expert recommendations tailored to your new companion.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Dog Selection -->
+                <div class="card card-hover p-8 text-center cursor-pointer group" onclick="selectPetType('dog')">
+                    <div class="bg-primary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary-200 transition-colors">
+                        <img src="https://images.unsplash.com/photo-1637852422069-81efc85e0a79" 
+                             alt="Happy golden retriever dog representing dog care guides and training resources" 
+                             class="w-12 h-12 rounded-full object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Dogs</h3>
+                    <p class="text-text-secondary mb-4">Complete guides for all breeds and sizes</p>
+                    <div class="text-primary font-semibold group-hover:text-primary-600 transition-colors">
+                        Start Dog Care Guide →
+                    </div>
+                </div>
+
+                <!-- Cat Selection -->
+                <div class="card card-hover p-8 text-center cursor-pointer group" onclick="selectPetType('cat')">
+                    <div class="bg-secondary-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-secondary-200 transition-colors">
+                        <img src="https://images.unsplash.com/photo-1605507677930-827b698c6975" 
+                             alt="Beautiful tabby cat representing feline care guides and behavior tips" 
+                             class="w-12 h-12 rounded-full object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Cats</h3>
+                    <p class="text-text-secondary mb-4">Feline-specific care and behavior</p>
+                    <div class="text-secondary font-semibold group-hover:text-secondary-600 transition-colors">
+                        Start Cat Care Guide →
+                    </div>
+                </div>
+
+                <!-- Bird Selection -->
+                <div class="card card-hover p-8 text-center cursor-pointer group" onclick="selectPetType('bird')">
+                    <div class="bg-accent-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-accent-200 transition-colors">
+                        <img src="https://images.unsplash.com/photo-1543698802-5850e471c71c" 
+                             alt="Colorful parrot representing avian care guides and habitat setup information" 
+                             class="w-12 h-12 rounded-full object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Birds</h3>
+                    <p class="text-text-secondary mb-4">Avian care and habitat setup</p>
+                    <div class="text-accent font-semibold group-hover:text-accent-600 transition-colors">
+                        Start Bird Care Guide →
+                    </div>
+                </div>
+
+                <!-- Small Pets Selection -->
+                <div class="card card-hover p-8 text-center cursor-pointer group" onclick="selectPetType('small')">
+                    <div class="bg-success-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-success-200 transition-colors">
+                        <img src="https://images.unsplash.com/photo-1658537713984-a42d49d0a03c" 
+                             alt="Cute rabbit representing small pet care guides for rabbits, hamsters, and guinea pigs" 
+                             class="w-12 h-12 rounded-full object-cover"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Small Pets</h3>
+                    <p class="text-text-secondary mb-4">Rabbits, hamsters, guinea pigs</p>
+                    <div class="text-success font-semibold group-hover:text-success-600 transition-colors">
+                        Start Small Pet Guide →
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Essentials -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-inter font-bold text-text-primary mb-6">
+                        Essential First Steps
+                    </h2>
+                    <p class="text-lg text-text-secondary mb-8">
+                        Get your new pet settled with our comprehensive first-week checklist and essential supplies guide.
+                    </p>
+
+                    <!-- Quick Action Cards -->
+                    <div class="space-y-4">
+                        <div class="card p-6 flex items-center space-x-4 hover:shadow-gentle transition-all cursor-pointer">
+                            <div class="bg-primary-100 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-inter font-semibold text-text-primary">First Week Checklist</h3>
+                                <p class="text-sm text-text-secondary">Day-by-day guide for your pet's first week home</p>
+                            </div>
+                            <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+
+                        <div class="card p-6 flex items-center space-x-4 hover:shadow-gentle transition-all cursor-pointer">
+                            <div class="bg-secondary-100 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-inter font-semibold text-text-primary">Essential Supplies List</h3>
+                                <p class="text-sm text-text-secondary">Everything you need before bringing your pet home</p>
+                            </div>
+                            <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+
+                        <div class="card p-6 flex items-center space-x-4 hover:shadow-gentle transition-all cursor-pointer">
+                            <div class="bg-accent-100 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="font-inter font-semibold text-text-primary">Home Setup Guide</h3>
+                                <p class="text-sm text-text-secondary">Pet-proof your space and create a safe environment</p>
+                            </div>
+                            <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1651571472549-e871a61c4e4e" 
+                         alt="New pet owner setting up a cozy space with pet supplies including bed, toys, and food bowls for their new companion" 
+                         class="rounded-2xl shadow-gentle w-full h-96 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    
+                    <!-- Floating Progress Card -->
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-gentle p-6 border border-gray-100">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-success-100 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-inter font-bold text-text-primary">7 Days</p>
+                                <p class="text-sm text-text-secondary">To Confidence</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Care Calendar -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Your Pet Care Calendar
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Track important milestones, appointments, and care routines with our interactive calendar system.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Calendar View -->
+                <div class="lg:col-span-2">
+                    <div class="card p-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-inter font-semibold text-text-primary">October 2024</h3>
+                            <div class="flex items-center space-x-2">
+                                <button class="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                                    <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                    </svg>
+                                </button>
+                                <button class="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                                    <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Calendar Grid -->
+                        <div class="grid grid-cols-7 gap-1 mb-4">
+                            <div class="p-3 text-center text-sm font-semibold text-text-secondary">Sun</div>
+                            <div class="p-3 text-center text-sm font-semibold text-text-secondary">Mon</div>
+                            <div class="p-3 text-center text-sm font-semibold text-text-secondary">Tue</div>
+                            <div class="p-3 text-center text-sm font-semibold text-text-secondary">Wed</div>
+                            <div class="p-3 text-center text-sm font-semibold text-text-secondary">Thu</div>
+                            <div class="p-3 text-center text-sm font-semibold text-text-secondary">Fri</div>
+                            <div class="p-3 text-center text-sm font-semibold text-text-secondary">Sat</div>
+                        </div>
+
+                        <div class="grid grid-cols-7 gap-1">
+                            <!-- Calendar Days -->
+                            <div class="p-3 text-center text-sm text-text-secondary">29</div>
+                            <div class="p-3 text-center text-sm text-text-secondary">30</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">1</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">2</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">3</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">4</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">5</div>
+                            
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">6</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">7</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">8</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">9</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">10</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">11</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">12</div>
+                            
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">13</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">14</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">15</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">16</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">17</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">18</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">19</div>
+                            
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">20</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">21</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">22</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">23</div>
+                            <div class="p-3 text-center text-sm bg-primary text-white rounded-lg">24</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer relative">
+                                25
+                                <div class="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-accent rounded-full"></div>
+                            </div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">26</div>
+                            
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer relative">
+                                27
+                                <div class="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-secondary rounded-full"></div>
+                            </div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">28</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">29</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">30</div>
+                            <div class="p-3 text-center text-sm text-text-primary hover:bg-primary-50 rounded-lg cursor-pointer">31</div>
+                            <div class="p-3 text-center text-sm text-text-secondary">1</div>
+                            <div class="p-3 text-center text-sm text-text-secondary">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Events -->
+                <div class="space-y-6">
+                    <div class="card p-6">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Upcoming Milestones</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-start space-x-3">
+                                <div class="bg-accent-100 p-2 rounded-lg mt-1">
+                                    <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-text-primary">First Vet Visit</p>
+                                    <p class="text-sm text-text-secondary">Oct 25, 2024</p>
+                                    <p class="text-sm text-accent">Health checkup & vaccinations</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start space-x-3">
+                                <div class="bg-secondary-100 p-2 rounded-lg mt-1">
+                                    <svg class="w-4 h-4 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="font-semibold text-text-primary">Training Session</p>
+                                    <p class="text-sm text-text-secondary">Oct 27, 2024</p>
+                                    <p class="text-sm text-secondary">Basic commands & socialization</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Quick Actions -->
+                    <div class="card p-6">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Quick Actions</h3>
+                        
+                        <div class="space-y-3">
+                            <button class="w-full btn-primary text-left flex items-center justify-between">
+                                <span>Download Starter Kit</span>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </button>
+                            
+                            <button class="w-full bg-secondary text-white px-6 py-3 rounded-lg font-inter font-semibold hover:bg-secondary-600 transition-colors flex items-center justify-between">
+                                <span>Join Community Forum</span>
+                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-2-2V10a2 2 0 012-2h8z"></path>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Resources -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Expert-Curated Resources
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Access veterinarian-approved guides and tools designed specifically for new pet owners.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Downloadable Guides -->
+                <div class="card p-6">
+                    <div class="bg-primary-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M4 4a2 2 0 00-2 2v8a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2H4zm0 2h12v8H4V6z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Downloadable Guides</h3>
+                    <p class="text-text-secondary mb-4">Comprehensive PDF guides you can save and reference offline.</p>
+                    <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            First Week Checklist
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Emergency Contact Template
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Care Schedule Template
+                        </li>
+                    </ul>
+                    <button class="w-full btn-primary">Download All Guides</button>
+                </div>
+
+                <!-- Interactive Tools -->
+                <div class="card p-6">
+                    <div class="bg-secondary-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Interactive Calculators</h3>
+                    <p class="text-text-secondary mb-4">Personalized tools to help you make informed decisions.</p>
+                    <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Feeding Calculator
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Cost Estimator
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Exercise Planner
+                        </li>
+                    </ul>
+                    <button class="w-full bg-secondary text-white px-6 py-3 rounded-lg font-inter font-semibold hover:bg-secondary-600 transition-colors">Access Tools</button>
+                </div>
+
+                <!-- Video Library -->
+                <div class="card p-6">
+                    <div class="bg-accent-100 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 6a2 2 0 012-2h6a2 2 0 012 2v8a2 2 0 01-2 2H4a2 2 0 01-2-2V6zM14.553 7.106A1 1 0 0014 8v4a1 1 0 00.553.894l2 1A1 1 0 0018 13V7a1 1 0 00-1.447-.894l-2 1z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Video Tutorials</h3>
+                    <p class="text-text-secondary mb-4">Step-by-step visual guides from expert veterinarians.</p>
+                    <ul class="space-y-2 text-sm text-text-secondary mb-6">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Basic Training Techniques
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Grooming Basics
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-success mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            Health Monitoring
+                        </li>
+                    </ul>
+                    <button class="w-full bg-accent text-white px-6 py-3 rounded-lg font-inter font-semibold hover:bg-accent-600 transition-colors">Watch Videos</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Support -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1714978444492-31b22166b3a3" 
+                         alt="Group of diverse pet owners sharing experiences and supporting each other in a community setting with their pets" 
+                         class="rounded-2xl shadow-gentle w-full h-96 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    
+                    <!-- Community Stats -->
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-gentle p-6 border border-gray-100">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-primary-100 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-inter font-bold text-text-primary">15K+</p>
+                                <p class="text-sm text-text-secondary">Active Members</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-3xl font-inter font-bold text-text-primary mb-6">
+                        Join Our Supportive Community
+                    </h2>
+                    <p class="text-lg text-text-secondary mb-8">
+                        Connect with fellow new pet owners, share experiences, and get support from our community of caring pet parents and expert moderators.
+                    </p>
+
+                    <!-- Community Features -->
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary-100 p-2 rounded-lg mt-1">
+                                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-text-primary">Species-Specific Forums</h3>
+                                <p class="text-text-secondary">Connect with owners of the same pet type for targeted advice</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-secondary-100 p-2 rounded-lg mt-1">
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-text-primary">Expert Q&A Sessions</h3>
+                                <p class="text-text-secondary">Weekly live sessions with veterinarians and trainers</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-accent-100 p-2 rounded-lg mt-1">
+                                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M4 3a2 2 0 100 4h12a2 2 0 100-4H4z"></path>
+                                    <path fill-rule="evenodd" d="M3 8a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-inter font-semibold text-text-primary">Success Story Sharing</h3>
+                                <p class="text-text-secondary">Celebrate milestones and inspire other new owners</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="btn-primary">Join Community</button>
+                        <button class="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-inter font-semibold hover:bg-primary-50 transition-colors">
+                            Browse Forums
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-inter font-bold">PetCare Hub</span>
+                    </div>
+                    <p class="text-primary-200">
+                        Your trusted companion for expert pet care guidance and community support.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="new_owner_guide.html" class="text-primary-200 hover:text-white transition-colors">New Owner Guide</a></li>
+                        <li><a href="food_nutrition_center.html" class="text-primary-200 hover:text-white transition-colors">Nutrition Center</a></li>
+                        <li><a href="environment_setup.html" class="text-primary-200 hover:text-white transition-colors">Environment Setup</a></li>
+                        <li><a href="health_care_essentials.html" class="text-primary-200 hover:text-white transition-colors">Health Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="emergency_care_guide.html" class="text-primary-200 hover:text-white transition-colors">Emergency Care</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Community Forum</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Expert Directory</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Care Calculators</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Get Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">24/7 Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Expert Consultations</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-600 mt-12 pt-8 text-center">
+                <p class="text-primary-200">
+                    © 2025 PetCare Hub. All Rights Reserved. | Trusted by 50,000+ pet parents worldwide.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function selectPetType(petType) {
+            // Update progress bar
+            const progressBar = document.querySelector('.bg-primary');
+            progressBar.style.width = '40%';
+            
+            // Update step indicator
+            const stepIndicator = document.querySelector('.text-primary-200');
+            stepIndicator.textContent = 'Step 2 of 5';
+            
+            // Show selected pet type feedback
+            alert(`Great choice! You've selected ${petType} care guides. Your personalized journey is being prepared.`);
+        }
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetCare Hub - Your Trusted Pet Care Companion</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Transform pet care anxiety into informed confidence with expert-curated guidance, community support, and practical tools for every pet owner.">
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpetcarehu8300back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background">
+    <!-- Emergency Quick Access Bar -->
+    <div class="bg-error-500 text-white py-2 px-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm font-medium">Pet Emergency? Get immediate help</span>
+            </div>
+            <a href="emergency_care_guide.html" class="bg-white text-error-500 px-4 py-1 rounded-full text-sm font-semibold hover:bg-error-50 transition-colors">
+                Emergency Guide
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-soft sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                    <span class="ml-2 text-2xl font-inter font-bold text-primary">PetCare Hub</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Home</a>
+                    <a href="new_owner_guide.html" class="text-text-secondary hover:text-primary transition-colors">New Owner Guide</a>
+                    <a href="food_nutrition_center.html" class="text-text-secondary hover:text-primary transition-colors">Nutrition</a>
+                    <a href="environment_setup.html" class="text-text-secondary hover:text-primary transition-colors">Environment</a>
+                    <a href="health_care_essentials.html" class="text-text-secondary hover:text-primary transition-colors">Health Care</a>
+                    <div class="flex items-center space-x-4">
+
+                        <!--<button class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-accent-600 transition-colors">
+                            Join Community
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl font-inter font-bold text-text-primary leading-tight">
+                            Every pet deserves expert care, and every owner deserves to feel 
+                            <span class="text-gradient">confident</span>
+                        </h1>
+                        <p class="text-xl text-text-secondary leading-relaxed">
+                            Transform pet care anxiety into informed confidence with expert-curated guidance, community support, and practical tools designed for every stage of your pet parenting journey.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="new_owner_guide.html" class="btn-primary text-center">
+                            Start Your Journey
+                        </a>
+                        <button class="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-inter font-semibold hover:bg-primary-50 transition-colors">
+                            Watch Demo
+                        </button>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="flex items-center space-x-6 pt-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Vet-Approved Content</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-text-secondary">50K+ Happy Pet Parents</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1724120504738-df4853569270" 
+                         alt="Happy family with their golden retriever dog in a bright living room, showcasing the joy of confident pet ownership" 
+                         class="rounded-2xl shadow-gentle w-full h-96 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    
+                    <!-- Floating Stats Card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-gentle p-6 border border-gray-100">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-success-100 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-inter font-bold text-text-primary">98%</p>
+                                <p class="text-sm text-text-secondary">Success Rate</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Type Quick Access -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Find Care Guidance for Your Pet
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Get instant access to species-specific care guides, expert tips, and community support tailored to your pet's unique needs.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Dog Card -->
+                <div class="card card-hover p-6 text-center group cursor-pointer">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M4.5 12.75l6 6 9-13.5"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">Dogs</h3>
+                    <p class="text-text-secondary mb-4">Complete care guides for all dog breeds and sizes</p>
+                    <a href="new_owner_guide.html" class="text-primary font-semibold hover:text-primary-600 transition-colors">
+                        Explore Dog Care →
+                    </a>
+                </div>
+
+                <!-- Cat Card -->
+                <div class="card card-hover p-6 text-center group cursor-pointer">
+                    <div class="bg-secondary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-200 transition-colors">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">Cats</h3>
+                    <p class="text-text-secondary mb-4">Feline-specific nutrition, health, and behavior tips</p>
+                    <a href="new_owner_guide.html" class="text-secondary font-semibold hover:text-secondary-600 transition-colors">
+                        Explore Cat Care →
+                    </a>
+                </div>
+
+                <!-- Bird Card -->
+                <div class="card card-hover p-6 text-center group cursor-pointer">
+                    <div class="bg-accent-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-200 transition-colors">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">Birds</h3>
+                    <p class="text-text-secondary mb-4">Avian care, habitat setup, and dietary requirements</p>
+                    <a href="new_owner_guide.html" class="text-accent font-semibold hover:text-accent-600 transition-colors">
+                        Explore Bird Care →
+                    </a>
+                </div>
+
+                <!-- Small Pets Card -->
+                <div class="card card-hover p-6 text-center group cursor-pointer">
+                    <div class="bg-success-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-success-200 transition-colors">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">Small Pets</h3>
+                    <p class="text-text-secondary mb-4">Rabbits, hamsters, guinea pigs, and more</p>
+                    <a href="new_owner_guide.html" class="text-success font-semibold hover:text-success-600 transition-colors">
+                        Explore Small Pet Care →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Tools & Search -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-inter font-bold text-text-primary mb-6">
+                        Instant Access to Expert Care Tools
+                    </h2>
+                    <p class="text-lg text-text-secondary mb-8">
+                        From emergency symptom checkers to feeding calculators, get the tools you need when you need them most.
+                    </p>
+
+                    <!-- Search Bar -->
+                    <div class="relative mb-8">
+                        <input type="text" 
+                               placeholder="Search symptoms, care tips, or ask a question..." 
+                               class="input-field pl-12 pr-4 py-4 text-lg">
+                        <svg class="w-6 h-6 text-text-secondary absolute left-4 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Quick Action Buttons -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="emergency_care_guide.html" class="emergency-card p-4 rounded-lg text-center hover:shadow-emergency transition-all">
+                            <div class="bg-error-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-text-primary">Emergency Care</h3>
+                            <p class="text-sm text-text-secondary">Immediate help</p>
+                        </a>
+
+                        <a href="health_care_essentials.html" class="card p-4 rounded-lg text-center hover:shadow-gentle transition-all">
+                            <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-text-primary">Health Tracker</h3>
+                            <p class="text-sm text-text-secondary">Monitor wellness</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1675587031123-22b29ac4e40a" 
+                         alt="Veterinarian examining a happy golden retriever puppy with a stethoscope, demonstrating professional pet care" 
+                         class="rounded-2xl shadow-gentle w-full h-96 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Content & Social Proof -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Social Proof Stats -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Trusted by Pet Parents Everywhere
+                </h2>
+                <div class="grid md:grid-cols-4 gap-8 mt-12">
+                    <div class="text-center">
+                        <div class="text-4xl font-inter font-bold text-primary mb-2">50K+</div>
+                        <div class="text-text-secondary">Active Pet Parents</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-inter font-bold text-secondary mb-2">98%</div>
+                        <div class="text-text-secondary">Success Rate</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-inter font-bold text-accent mb-2">24/7</div>
+                        <div class="text-text-secondary">Expert Support</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-inter font-bold text-success mb-2">500+</div>
+                        <div class="text-text-secondary">Vet-Approved Guides</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Expert Testimonials -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1731350152147-fa357665a0ec" 
+                             alt="Dr. Sarah Mitchell, veterinarian with 15 years of experience, smiling professionally" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Dr. Sarah Mitchell</h4>
+                            <p class="text-sm text-text-secondary">Veterinarian, 15+ years</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">
+                        "PetCare Hub provides the most comprehensive and accurate pet care information I've seen. I regularly recommend it to my clients."
+                    </p>
+                </div>
+
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1605507677930-827b698c6975" 
+                             alt="Maria Rodriguez, happy pet owner holding her rescued tabby cat, smiling warmly" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Maria Rodriguez</h4>
+                            <p class="text-sm text-text-secondary">First-time Cat Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">
+                        "As a new cat parent, I was overwhelmed. PetCare Hub's step-by-step guides gave me the confidence I needed to provide the best care for Luna."
+                    </p>
+                </div>
+
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1734069710714-994e2314b548" 
+                             alt="James Thompson, experienced dog trainer with his German Shepherd, both looking professional and confident" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">James Thompson</h4>
+                            <p class="text-sm text-text-secondary">Professional Dog Trainer</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic">
+                        "The behavioral guidance and training resources are exceptional. I use PetCare Hub's materials with my clients regularly."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Navigation Cards -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Everything You Need in One Place
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Comprehensive resources to support every aspect of your pet care journey
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- New Owner Guide -->
+                <a href="new_owner_guide.html" class="card card-hover p-8 group">
+                    <div class="bg-primary-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-primary-200 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">New Owner Academy</h3>
+                    <p class="text-text-secondary mb-4">Step-by-step guides for first-time pet parents with species-specific onboarding and milestone tracking.</p>
+                    <div class="text-primary font-semibold group-hover:text-primary-600 transition-colors">
+                        Start Learning →
+                    </div>
+                </a>
+
+                <!-- Food & Nutrition -->
+                <a href="food_nutrition_center.html" class="card card-hover p-8 group">
+                    <div class="bg-secondary-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-secondary-200 transition-colors">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Food & Nutrition Hub</h3>
+                    <p class="text-text-secondary mb-4">Ingredient databases, feeding calculators, and dietary guidance for optimal pet health.</p>
+                    <div class="text-secondary font-semibold group-hover:text-secondary-600 transition-colors">
+                        Explore Nutrition →
+                    </div>
+                </a>
+
+                <!-- Environment Setup -->
+                <a href="environment_setup.html" class="card card-hover p-8 group">
+                    <div class="bg-accent-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6 group-hover:bg-accent-200 transition-colors">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h2a1 1 0 001-1v-2a1 1 0 011-1h2a1 1 0 011 1v2a1 1 0 001 1h2a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Environment Setup</h3>
+                    <p class="text-text-secondary mb-4">Room-by-room pet-proofing guides and habitat creation tools for safe, enriching spaces.</p>
+                    <div class="text-accent font-semibold group-hover:text-accent-600 transition-colors">
+                        Setup Your Space →
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-inter font-bold">PetCare Hub</span>
+                    </div>
+                    <p class="text-primary-200">
+                        Your trusted companion for expert pet care guidance and community support.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="new_owner_guide.html" class="text-primary-200 hover:text-white transition-colors">New Owner Guide</a></li>
+                        <li><a href="food_nutrition_center.html" class="text-primary-200 hover:text-white transition-colors">Nutrition Center</a></li>
+                        <li><a href="environment_setup.html" class="text-primary-200 hover:text-white transition-colors">Environment Setup</a></li>
+                        <li><a href="health_care_essentials.html" class="text-primary-200 hover:text-white transition-colors">Health Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="emergency_care_guide.html" class="text-primary-200 hover:text-white transition-colors">Emergency Care</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Community Forum</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Expert Directory</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Care Calculators</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Get Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">24/7 Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Expert Consultations</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-600 mt-12 pt-8 text-center">
+                <p class="text-primary-200">
+                    © 2025 PetCare Hub. All Rights Reserved. | Trusted by 50,000+ pet parents worldwide.
+                </p>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

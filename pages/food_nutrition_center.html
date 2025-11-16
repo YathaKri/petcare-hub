@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food & Nutrition Center - PetCare Hub</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Expert feeding guidance with interactive tools, ingredient databases, and personalized nutrition plans for optimal pet health.">
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpetcarehu8300back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background">
+    <!-- Emergency Quick Access Bar -->
+    <div class="bg-error-500 text-white py-2 px-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm font-medium">Pet Emergency? Get immediate help</span>
+            </div>
+            <a href="emergency_care_guide.html" class="bg-white text-error-500 px-4 py-1 rounded-full text-sm font-semibold hover:bg-error-50 transition-colors">
+                Emergency Guide
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-soft sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                    <span class="ml-2 text-2xl font-inter font-bold text-primary">PetCare Hub</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="new_owner_guide.html" class="text-text-secondary hover:text-primary transition-colors">New Owner Guide</a>
+                    <a href="food_nutrition_center.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Nutrition</a>
+                    <a href="environment_setup.html" class="text-text-secondary hover:text-primary transition-colors">Environment</a>
+                    <a href="health_care_essentials.html" class="text-text-secondary hover:text-primary transition-colors">Health Care</a>
+                    <div class="flex items-center space-x-4">
+                        <button class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-accent-600 transition-colors">
+                            Join Community
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-secondary-50 to-accent-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl font-inter font-bold text-text-primary leading-tight">
+                            Nutrition Made Simple for 
+                            <span class="text-gradient">Every Pet</span>
+                        </h1>
+                        <p class="text-xl text-text-secondary leading-relaxed">
+                            Transform feeding confusion into confident nutrition decisions with expert-curated guides, interactive calculators, and personalized meal planning for your pet's optimal health.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="btn-secondary text-center">
+                            Start Nutrition Assessment
+                        </button>
+                        <button class="bg-white text-secondary border-2 border-secondary px-6 py-3 rounded-lg font-inter font-semibold hover:bg-secondary-50 transition-colors">
+                            Browse Food Database
+                        </button>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="flex items-center space-x-6 pt-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Veterinary Nutritionist Approved</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-text-secondary">2,500+ Food Products Analyzed</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1627244228942-689b73208739" 
+                         alt="Happy golden retriever eating from a stainless steel bowl filled with nutritious kibble, demonstrating proper feeding practices" 
+                         class="rounded-2xl shadow-gentle w-full h-96 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    
+                    <!-- Floating Calculator Card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-gentle p-6 border border-gray-100">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-secondary-100 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-inter font-bold text-text-primary">Free</p>
+                                <p class="text-sm text-text-secondary">Feeding Calculator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Type Filter Section -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Species-Specific Nutrition Guidance
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Get tailored feeding recommendations based on your pet's species, breed, age, and health requirements.
+                </p>
+            </div>
+
+            <!-- Pet Type Tabs -->
+            <div class="flex justify-center mb-8">
+                <div class="bg-surface rounded-lg p-2 flex space-x-2">
+                    <button class="bg-primary text-white px-6 py-2 rounded-lg font-semibold transition-colors">Dogs</button>
+                    <button class="text-text-secondary hover:text-primary px-6 py-2 rounded-lg font-semibold transition-colors">Cats</button>
+                    <button class="text-text-secondary hover:text-primary px-6 py-2 rounded-lg font-semibold transition-colors">Birds</button>
+                    <button class="text-text-secondary hover:text-primary px-6 py-2 rounded-lg font-semibold transition-colors">Small Pets</button>
+                </div>
+            </div>
+
+            <!-- Nutrition Cards Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Life Stage Nutrition -->
+                <div class="card card-hover p-6">
+                    <div class="bg-primary-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Life Stage Nutrition</h3>
+                    <p class="text-text-secondary mb-4">Puppy, adult, and senior feeding guidelines with portion calculations and nutrient requirements.</p>
+                    <button class="text-primary font-semibold hover:text-primary-600 transition-colors">
+                        Explore Life Stages →
+                    </button>
+                </div>
+
+                <!-- Breed-Specific Diets -->
+                <div class="card card-hover p-6">
+                    <div class="bg-secondary-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Breed-Specific Diets</h3>
+                    <p class="text-text-secondary mb-4">Customized nutrition plans for large breeds, small breeds, and breed-specific health considerations.</p>
+                    <button class="text-secondary font-semibold hover:text-secondary-600 transition-colors">
+                        Find Your Breed →
+                    </button>
+                </div>
+
+                <!-- Special Dietary Needs -->
+                <div class="card card-hover p-6">
+                    <div class="bg-accent-100 w-16 h-16 rounded-xl flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Special Dietary Needs</h3>
+                    <p class="text-text-secondary mb-4">Allergies, sensitivities, weight management, and therapeutic diet recommendations.</p>
+                    <button class="text-accent font-semibold hover:text-accent-600 transition-colors">
+                        Special Diets →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Smart Nutrition Tools
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Interactive calculators and assessment tools for personalized feeding guidance
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Tools List -->
+                <div class="space-y-6">
+                    <!-- Feeding Calculator -->
+                    <div class="card p-6 hover:shadow-gentle transition-all">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary-100 p-3 rounded-lg flex-shrink-0">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-inter font-semibold text-text-primary mb-2">Feeding Calculator</h3>
+                                <p class="text-text-secondary mb-3">Calculate exact portion sizes based on weight, age, activity level, and health status.</p>
+                                <button class="text-primary font-semibold hover:text-primary-600 transition-colors">
+                                    Calculate Portions →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ingredient Scanner -->
+                    <div class="card p-6 hover:shadow-gentle transition-all">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-secondary-100 p-3 rounded-lg flex-shrink-0">
+                                <svg class="w-6 h-6 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-inter font-semibold text-text-primary mb-2">Ingredient Scanner</h3>
+                                <p class="text-text-secondary mb-3">Scan food labels to identify harmful ingredients and get quality ratings.</p>
+                                <button class="text-secondary font-semibold hover:text-secondary-600 transition-colors">
+                                    Scan Ingredients →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Meal Planner -->
+                    <div class="card p-6 hover:shadow-gentle transition-all">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-accent-100 p-3 rounded-lg flex-shrink-0">
+                                <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M8 7V3a1 1 0 012 0v4h4a1 1 0 010 2h-4v4a1 1 0 01-2 0v-4H4a1 1 0 010-2h4z"></path>
+                                </svg>
+                            </div>
+                            <div class="flex-1">
+                                <h3 class="text-lg font-inter font-semibold text-text-primary mb-2">Personalized Meal Planner</h3>
+                                <p class="text-text-secondary mb-3">Create custom feeding schedules with automated shopping lists and reminders.</p>
+                                <button class="text-accent font-semibold hover:text-accent-600 transition-colors">
+                                    Plan Meals →
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Demo -->
+                <div class="relative">
+                    <div class="card p-8">
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-6 text-center">
+                            Quick Feeding Calculator
+                        </h3>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-text-primary mb-2">Pet Weight (lbs)</label>
+                                <input type="number" placeholder="Enter weight" class="input-field">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-semibold text-text-primary mb-2">Activity Level</label>
+                                <select class="input-field">
+                                    <option>Low Activity</option>
+                                    <option>Moderate Activity</option>
+                                    <option>High Activity</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-semibold text-text-primary mb-2">Life Stage</label>
+                                <select class="input-field">
+                                    <option>Puppy</option>
+                                    <option>Adult</option>
+                                    <option>Senior</option>
+                                </select>
+                            </div>
+                            
+                            <button class="btn-primary w-full">
+                                Calculate Daily Portions
+                            </button>
+                        </div>
+                        
+                        <!-- Sample Result -->
+                        <div class="mt-6 p-4 bg-success-50 rounded-lg border border-success-200">
+                            <div class="flex items-center space-x-2 mb-2">
+                                <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                <span class="text-sm font-semibold text-success-700">Recommended Daily Amount</span>
+                            </div>
+                            <p class="text-success-700 font-semibold">2.5 cups per day (split into 2 meals)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Database & Brand Comparison -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Comprehensive Food Database
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Compare brands, analyze ingredients, and find the perfect food for your pet's needs
+                </p>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="max-w-2xl mx-auto mb-12">
+                <div class="relative">
+                    <input type="text" 
+                           placeholder="Search food brands, ingredients, or specific products..." 
+                           class="input-field pl-12 pr-16 py-4 text-lg">
+                    <svg class="w-6 h-6 text-text-secondary absolute left-4 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>
+                    <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-600 transition-colors">
+                        Search
+                    </button>
+                </div>
+            </div>
+
+            <!-- Featured Food Comparisons -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Premium Dry Food -->
+                <div class="card p-6">
+                    <img src="https://images.unsplash.com/photo-1695169954725-fa757fd7315c" 
+                         alt="Premium dry dog food kibble in a measuring cup, showing high-quality nutrition for adult dogs" 
+                         class="w-full h-48 object-cover rounded-lg mb-4"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary">Premium Adult Formula</h3>
+                        <div class="bg-success-100 text-success-700 px-2 py-1 rounded-full text-sm font-semibold">
+                            A+ Rating
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Protein</span>
+                            <span class="font-semibold text-text-primary">28%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Fat</span>
+                            <span class="font-semibold text-text-primary">15%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Fiber</span>
+                            <span class="font-semibold text-text-primary">4%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-sm text-text-secondary">No artificial preservatives</span>
+                    </div>
+                    
+                    <button class="text-primary font-semibold hover:text-primary-600 transition-colors">
+                        View Full Analysis →
+                    </button>
+                </div>
+
+                <!-- Grain-Free Option -->
+                <div class="card p-6">
+                    <img src="https://images.unsplash.com/photo-1667031232513-31a7dbead5f7" 
+                         alt="Grain-free dog food with visible meat pieces and vegetables, ideal for dogs with grain sensitivities" 
+                         class="w-full h-48 object-cover rounded-lg mb-4"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary">Grain-Free Recipe</h3>
+                        <div class="bg-secondary-100 text-secondary-700 px-2 py-1 rounded-full text-sm font-semibold">
+                            A Rating
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Protein</span>
+                            <span class="font-semibold text-text-primary">32%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Fat</span>
+                            <span class="font-semibold text-text-primary">18%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Fiber</span>
+                            <span class="font-semibold text-text-primary">3.5%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-sm text-text-secondary">Grain & gluten free</span>
+                    </div>
+                    
+                    <button class="text-secondary font-semibold hover:text-secondary-600 transition-colors">
+                        View Full Analysis →
+                    </button>
+                </div>
+
+                <!-- Budget-Friendly Option -->
+                <div class="card p-6">
+                    <img src="https://images.unsplash.com/photo-1695169954725-fa757fd7315c" 
+                         alt="Budget-friendly dog food kibble in a bowl, providing good nutrition at an affordable price point" 
+                         class="w-full h-48 object-cover rounded-lg mb-4"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    
+                    <div class="flex items-center justify-between mb-3">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary">Budget Complete</h3>
+                        <div class="bg-accent-100 text-accent-700 px-2 py-1 rounded-full text-sm font-semibold">
+                            B+ Rating
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-2 mb-4">
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Protein</span>
+                            <span class="font-semibold text-text-primary">24%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Fat</span>
+                            <span class="font-semibold text-text-primary">12%</span>
+                        </div>
+                        <div class="flex justify-between text-sm">
+                            <span class="text-text-secondary">Fiber</span>
+                            <span class="font-semibold text-text-primary">5%</span>
+                        </div>
+                    </div>
+                    
+                    <div class="flex items-center space-x-2 mb-4">
+                        <svg class="w-4 h-4 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        <span class="text-sm text-text-secondary">Complete & balanced</span>
+                    </div>
+                    
+                    <button class="text-accent font-semibold hover:text-accent-600 transition-colors">
+                        View Full Analysis →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Guidance Section -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-inter font-bold text-text-primary mb-6">
+                        Expert Nutritional Guidance
+                    </h2>
+                    <p class="text-lg text-text-secondary mb-8">
+                        Get personalized advice from certified veterinary nutritionists and access evidence-based feeding recommendations.
+                    </p>
+
+                    <!-- Expert Features -->
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary-100 p-2 rounded-lg flex-shrink-0">
+                                <svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-text-primary mb-1">Nutritional Deficiency Alerts</h3>
+                                <p class="text-text-secondary text-sm">Automated analysis of your pet's diet to identify potential nutrient gaps.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-secondary-100 p-2 rounded-lg flex-shrink-0">
+                                <svg class="w-5 h-5 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-text-primary mb-1">Seasonal Feeding Adjustments</h3>
+                                <p class="text-text-secondary text-sm">Guidance on adjusting portions and nutrients based on seasonal activity changes.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-accent-100 p-2 rounded-lg flex-shrink-0">
+                                <svg class="w-5 h-5 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M8 7V3a1 1 0 012 0v4h4a1 1 0 010 2h-4v4a1 1 0 01-2 0v-4H4a1 1 0 010-2h4z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-semibold text-text-primary mb-1">Local Retailer Integration</h3>
+                                <p class="text-text-secondary text-sm">Find recommended foods at nearby stores with price comparisons and availability.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8">
+                        <button class="btn-primary">
+                            Consult with Nutritionist
+                        </button>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1701848053746-2ebc5ea9f801" 
+                         alt="Professional veterinary nutritionist examining pet food samples in a modern clinic laboratory setting" 
+                         class="rounded-2xl shadow-gentle w-full h-96 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    
+                    <!-- Floating Expert Card -->
+                    <div class="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-gentle p-6 border border-gray-100">
+                        <div class="flex items-center space-x-3">
+                            <img src="https://images.unsplash.com/photo-1689702582288-24f82a39c071" 
+                                 alt="Dr. Emily Chen, certified veterinary nutritionist with 12 years of experience, smiling professionally" 
+                                 class="w-12 h-12 rounded-full object-cover"
+                                 onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                            <div>
+                                <p class="font-semibold text-text-primary text-sm">Dr. Emily Chen</p>
+                                <p class="text-xs text-text-secondary">Veterinary Nutritionist</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories & Social Proof -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Nutrition Success Stories
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Real transformations from pet parents who found the perfect nutrition plan
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Success Story 1 -->
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1690555814124-9702abc4c4ba" 
+                             alt="Sarah Johnson, happy pet owner with her healthy golden retriever after successful weight management program" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Sarah Johnson</h4>
+                            <p class="text-sm text-text-secondary">Golden Retriever Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "The feeding calculator helped Max lose 15 pounds safely. His energy is back and the vet says his health markers are perfect!"
+                    </p>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm font-semibold text-success">Weight Loss Success</span>
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Story 2 -->
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1729924880397-f70d252d4b6b" 
+                             alt="Michael Rodriguez, satisfied cat owner whose Persian cat overcame food allergies with specialized diet plan" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Michael Rodriguez</h4>
+                            <p class="text-sm text-text-secondary">Persian Cat Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "The ingredient scanner identified the allergen causing Luna's digestive issues. She's been symptom-free for 6 months now!"
+                    </p>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm font-semibold text-success">Allergy Resolution</span>
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Success Story 3 -->
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1634328476282-51a23bb0c135" 
+                             alt="Jennifer Kim, proud puppy owner whose German Shepherd puppy thrived on customized growth nutrition plan" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Jennifer Kim</h4>
+                            <p class="text-sm text-text-secondary">German Shepherd Puppy Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "The puppy nutrition plan was perfect for Rex's growth. He's developing beautifully and the vet is impressed with his progress!"
+                    </p>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-sm font-semibold text-success">Healthy Growth</span>
+                        <div class="flex space-x-1">
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                            <svg class="w-4 h-4 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                Ready to Transform Your Pet's Nutrition?
+            </h2>
+            <p class="text-lg text-text-secondary mb-8">
+                Join thousands of pet parents who've discovered the perfect feeding plan for their furry friends.
+            </p>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn-primary">
+                    Start Free Assessment
+                </button>
+                <button class="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-inter font-semibold hover:bg-primary-50 transition-colors">
+                    Browse Food Database
+                </button>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid md:grid-cols-3 gap-8 mt-12">
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-primary mb-2">2,500+</div>
+                    <div class="text-text-secondary">Food Products Analyzed</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-secondary mb-2">15K+</div>
+                    <div class="text-text-secondary">Successful Nutrition Plans</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-inter font-bold text-accent mb-2">95%</div>
+                    <div class="text-text-secondary">Pet Health Improvement</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-inter font-bold">PetCare Hub</span>
+                    </div>
+                    <p class="text-primary-200">
+                        Your trusted companion for expert pet care guidance and community support.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="new_owner_guide.html" class="text-primary-200 hover:text-white transition-colors">New Owner Guide</a></li>
+                        <li><a href="food_nutrition_center.html" class="text-primary-200 hover:text-white transition-colors">Nutrition Center</a></li>
+                        <li><a href="environment_setup.html" class="text-primary-200 hover:text-white transition-colors">Environment Setup</a></li>
+                        <li><a href="health_care_essentials.html" class="text-primary-200 hover:text-white transition-colors">Health Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="emergency_care_guide.html" class="text-primary-200 hover:text-white transition-colors">Emergency Care</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Community Forum</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Expert Directory</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Care Calculators</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Get Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">24/7 Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Expert Consultations</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-600 mt-12 pt-8 text-center">
+                <p class="text-primary-200">
+                    © 2025 PetCare Hub. All Rights Reserved. | Trusted by 50,000+ pet parents worldwide.
+                </p>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

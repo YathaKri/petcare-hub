@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care Essentials - PetCare Hub</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Comprehensive health and wellness portal with preventive care guidance, symptom checkers, vaccination schedulers, and expert health monitoring tools for optimal pet wellbeing.">
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpetcarehu8300back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background">
+    <!-- Emergency Quick Access Bar -->
+    <div class="bg-error-500 text-white py-2 px-4">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-2">
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm font-medium">Pet Emergency? Get immediate help</span>
+            </div>
+            <a href="emergency_care_guide.html" class="bg-white text-error-500 px-4 py-1 rounded-full text-sm font-semibold hover:bg-error-50 transition-colors">
+                Emergency Guide
+            </a>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-soft sticky top-0 z-50">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                    <span class="ml-2 text-2xl font-inter font-bold text-primary">PetCare Hub</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="new_owner_guide.html" class="text-text-secondary hover:text-primary transition-colors">New Owner Guide</a>
+                    <a href="food_nutrition_center.html" class="text-text-secondary hover:text-primary transition-colors">Nutrition</a>
+                    <a href="environment_setup.html" class="text-text-secondary hover:text-primary transition-colors">Environment</a>
+                    <a href="health_care_essentials.html" class="text-primary font-semibold border-b-2 border-primary pb-1">Health Care</a>
+                    <div class="flex items-center space-x-4">
+                        <button class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-accent-600 transition-colors">
+                            Join Community
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gradient-to-br from-primary-50 to-secondary-50 py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h1 class="text-5xl font-inter font-bold text-text-primary leading-tight">
+                            Proactive Health Care for 
+                            <span class="text-gradient">Happier, Healthier Pets</span>
+                        </h1>
+                        <p class="text-xl text-text-secondary leading-relaxed">
+                            Stay ahead of health issues with expert-guided preventive care, smart monitoring tools, and personalized wellness tracking designed to keep your pet thriving at every life stage.
+                        </p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button class="btn-primary text-center">
+                            Start Health Assessment
+                        </button>
+                        <button class="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-inter font-semibold hover:bg-primary-50 transition-colors">
+                            Schedule Checkup
+                        </button>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="flex items-center space-x-6 pt-4">
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-text-secondary">Vet-Approved Protocols</span>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <svg class="w-5 h-5 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                            </svg>
+                            <span class="text-sm text-text-secondary">24/7 Health Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1681305694032-080750133961" 
+                         alt="Professional veterinarian examining a healthy golden retriever with a stethoscope in a modern clinic, demonstrating comprehensive pet health care" 
+                         class="rounded-2xl shadow-gentle w-full h-96 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    
+                    <!-- Floating Health Stats Card -->
+                    <div class="absolute -bottom-6 -left-6 bg-white rounded-xl shadow-gentle p-6 border border-gray-100">
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-success-100 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-success" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-inter font-bold text-text-primary">95%</p>
+                                <p class="text-sm text-text-secondary">Prevention Success</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pet Type Health Filter -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Species-Specific Health Guidance
+                </h2>
+                <p class="text-lg text-text-secondary max-w-2xl mx-auto">
+                    Get tailored health protocols, vaccination schedules, and preventive care plans designed for your pet's unique physiological needs.
+                </p>
+            </div>
+
+            <!-- Pet Type Tabs -->
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <button class="bg-primary text-white px-6 py-3 rounded-lg font-semibold transition-colors">
+                    Dogs
+                </button>
+                <button class="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                    Cats
+                </button>
+                <button class="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                    Birds
+                </button>
+                <button class="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-semibold hover:bg-primary-50 transition-colors">
+                    Small Pets
+                </button>
+            </div>
+
+            <!-- Health Categories Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Preventive Care -->
+                <div class="card card-hover p-6 text-center group cursor-pointer">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary-200 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">Preventive Care</h3>
+                    <p class="text-text-secondary mb-4">Vaccination schedules, wellness exams, and routine health maintenance</p>
+                    <span class="text-primary font-semibold hover:text-primary-600 transition-colors">
+                        View Schedule →
+                    </span>
+                </div>
+
+                <!-- Symptom Checker -->
+                <div class="card card-hover p-6 text-center group cursor-pointer">
+                    <div class="bg-secondary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-secondary-200 transition-colors">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 9a2 2 0 114 0 2 2 0 01-4 0z"></path>
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-13a4 4 0 00-3.446 6.032l-2.261 2.26a1 1 0 101.414 1.415l2.261-2.261A4 4 0 1011 5z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">Symptom Checker</h3>
+                    <p class="text-text-secondary mb-4">AI-powered assessment tool for identifying potential health concerns</p>
+                    <span class="text-secondary font-semibold hover:text-secondary-600 transition-colors">
+                        Check Symptoms →
+                    </span>
+                </div>
+
+                <!-- Medication Tracker -->
+                <div class="card card-hover p-6 text-center group cursor-pointer">
+                    <div class="bg-accent-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-accent-200 transition-colors">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">Medication Tracker</h3>
+                    <p class="text-text-secondary mb-4">Smart reminders and dosage tracking for all medications</p>
+                    <span class="text-accent font-semibold hover:text-accent-600 transition-colors">
+                        Track Meds →
+                    </span>
+                </div>
+
+                <!-- Health Records -->
+                <div class="card card-hover p-6 text-center group cursor-pointer">
+                    <div class="bg-success-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-success-200 transition-colors">
+                        <svg class="w-8 h-8 text-success" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M4 4a2 2 0 012-2h8a2 2 0 012 2v12a2 2 0 01-2 2H6a2 2 0 01-2-2V4zm2 0v12h8V4H6z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-semibold text-text-primary mb-2">Health Records</h3>
+                    <p class="text-text-secondary mb-4">Digital health portfolio with vet visit history and test results</p>
+                    <span class="text-success font-semibold hover:text-success-600 transition-colors">
+                        View Records →
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Health Tools -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-inter font-bold text-text-primary mb-6">
+                        Smart Health Monitoring Tools
+                    </h2>
+                    <p class="text-lg text-text-secondary mb-8">
+                        Advanced assessment tools and tracking systems that help you stay proactive about your pet's health and catch potential issues early.
+                    </p>
+
+                    <!-- Quick Health Assessment -->
+                    <div class="card p-6 mb-6">
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-4">Quick Health Assessment</h3>
+                        <p class="text-text-secondary mb-4">Answer a few questions to get personalized health recommendations</p>
+                        
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-sm font-semibold text-text-primary mb-2">Pet's Age</label>
+                                <select class="input-field">
+                                    <option>Select age range</option>
+                                    <option>Puppy/Kitten (0-1 year)</option>
+                                    <option>Young Adult (1-3 years)</option>
+                                    <option>Adult (3-7 years)</option>
+                                    <option>Senior (7+ years)</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-sm font-semibold text-text-primary mb-2">Current Concerns</label>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2">
+                                        <span class="text-sm">Appetite changes</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2">
+                                        <span class="text-sm">Energy levels</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2">
+                                        <span class="text-sm">Behavior changes</span>
+                                    </label>
+                                    <label class="flex items-center">
+                                        <input type="checkbox" class="mr-2">
+                                        <span class="text-sm">Physical symptoms</span>
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <button class="btn-primary w-full">
+                                Get Health Recommendations
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Emergency Quick Actions -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <a href="emergency_care_guide.html" class="emergency-card p-4 rounded-lg text-center hover:shadow-emergency transition-all">
+                            <div class="bg-error-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-text-primary">Emergency Care</h3>
+                            <p class="text-sm text-text-secondary">Immediate protocols</p>
+                        </a>
+
+                        <div class="card p-4 rounded-lg text-center hover:shadow-gentle transition-all cursor-pointer">
+                            <div class="bg-primary-100 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3">
+                                <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                                </svg>
+                            </div>
+                            <h3 class="font-semibold text-text-primary">Vet Consultation</h3>
+                            <p class="text-sm text-text-secondary">Book appointment</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1732255120059-57784c98c64a" 
+                         alt="Happy and healthy dachshund dog being examined by a veterinarian, showing the importance of regular health checkups and preventive care" 
+                         class="rounded-2xl shadow-gentle w-full h-96 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Calendar & Scheduling -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Visual Health Calendar
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Never miss important health milestones with our interactive scheduling system
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Calendar Widget -->
+                <div class="lg:col-span-2">
+                    <div class="card p-6">
+                        <div class="flex items-center justify-between mb-6">
+                            <h3 class="text-xl font-inter font-semibold text-text-primary">October 2024</h3>
+                            <div class="flex space-x-2">
+                                <button class="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                                    <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                                    </svg>
+                                </button>
+                                <button class="p-2 hover:bg-gray-100 rounded-lg transition-colors">
+                                    <svg class="w-5 h-5 text-text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Calendar Grid -->
+                        <div class="grid grid-cols-7 gap-2 mb-4">
+                            <div class="text-center text-sm font-semibold text-text-secondary py-2">Sun</div>
+                            <div class="text-center text-sm font-semibold text-text-secondary py-2">Mon</div>
+                            <div class="text-center text-sm font-semibold text-text-secondary py-2">Tue</div>
+                            <div class="text-center text-sm font-semibold text-text-secondary py-2">Wed</div>
+                            <div class="text-center text-sm font-semibold text-text-secondary py-2">Thu</div>
+                            <div class="text-center text-sm font-semibold text-text-secondary py-2">Fri</div>
+                            <div class="text-center text-sm font-semibold text-text-secondary py-2">Sat</div>
+                        </div>
+
+                        <div class="grid grid-cols-7 gap-2">
+                            <!-- Calendar Days -->
+                            <div class="text-center py-2 text-text-secondary">29</div>
+                            <div class="text-center py-2 text-text-secondary">30</div>
+                            <div class="text-center py-2 text-text-primary">1</div>
+                            <div class="text-center py-2 text-text-primary">2</div>
+                            <div class="text-center py-2 text-text-primary">3</div>
+                            <div class="text-center py-2 text-text-primary">4</div>
+                            <div class="text-center py-2 text-text-primary">5</div>
+                            
+                            <div class="text-center py-2 text-text-primary">6</div>
+                            <div class="text-center py-2 text-text-primary">7</div>
+                            <div class="text-center py-2 text-text-primary">8</div>
+                            <div class="text-center py-2 text-text-primary">9</div>
+                            <div class="text-center py-2 text-text-primary">10</div>
+                            <div class="text-center py-2 text-text-primary">11</div>
+                            <div class="text-center py-2 text-text-primary">12</div>
+                            
+                            <div class="text-center py-2 text-text-primary">13</div>
+                            <div class="text-center py-2 text-text-primary">14</div>
+                            <div class="text-center py-2 text-text-primary relative">
+                                15
+                                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-primary rounded-full"></div>
+                            </div>
+                            <div class="text-center py-2 text-text-primary">16</div>
+                            <div class="text-center py-2 text-text-primary">17</div>
+                            <div class="text-center py-2 text-text-primary">18</div>
+                            <div class="text-center py-2 text-text-primary">19</div>
+                            
+                            <div class="text-center py-2 text-text-primary">20</div>
+                            <div class="text-center py-2 text-text-primary">21</div>
+                            <div class="text-center py-2 text-text-primary">22</div>
+                            <div class="text-center py-2 text-text-primary">23</div>
+                            <div class="text-center py-2 bg-primary text-white rounded-lg">24</div>
+                            <div class="text-center py-2 text-text-primary">25</div>
+                            <div class="text-center py-2 text-text-primary">26</div>
+                            
+                            <div class="text-center py-2 text-text-primary">27</div>
+                            <div class="text-center py-2 text-text-primary relative">
+                                28
+                                <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-accent rounded-full"></div>
+                            </div>
+                            <div class="text-center py-2 text-text-primary">29</div>
+                            <div class="text-center py-2 text-text-primary">30</div>
+                            <div class="text-center py-2 text-text-primary">31</div>
+                            <div class="text-center py-2 text-text-secondary">1</div>
+                            <div class="text-center py-2 text-text-secondary">2</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Upcoming Appointments -->
+                <div class="space-y-6">
+                    <div class="card p-6">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Upcoming Appointments</h3>
+                        
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-4 p-3 bg-primary-50 rounded-lg">
+                                <div class="bg-primary w-3 h-3 rounded-full"></div>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-text-primary">Annual Checkup</p>
+                                    <p class="text-sm text-text-secondary">Oct 15, 2024 - 2:00 PM</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center space-x-4 p-3 bg-accent-50 rounded-lg">
+                                <div class="bg-accent w-3 h-3 rounded-full"></div>
+                                <div class="flex-1">
+                                    <p class="font-semibold text-text-primary">Vaccination Due</p>
+                                    <p class="text-sm text-text-secondary">Oct 28, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="btn-primary w-full mt-4">
+                            Schedule New Appointment
+                        </button>
+                    </div>
+
+                    <!-- Health Reminders -->
+                    <div class="card p-6">
+                        <h3 class="text-lg font-inter font-semibold text-text-primary mb-4">Health Reminders</h3>
+                        
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-primary">Heartworm Prevention</span>
+                                <span class="text-xs bg-success-100 text-success px-2 py-1 rounded-full">Due Today</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-primary">Flea & Tick Treatment</span>
+                                <span class="text-xs bg-warning-100 text-warning px-2 py-1 rounded-full">Due in 3 days</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-sm text-text-primary">Dental Cleaning</span>
+                                <span class="text-xs bg-secondary-100 text-secondary px-2 py-1 rounded-full">Due in 2 weeks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Expert Health Guides -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Expert Health Guides
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Comprehensive health resources written by veterinarians and animal health specialists
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Guide 1 -->
+                <div class="card card-hover">
+                    <img src="https://images.unsplash.com/photo-1662837625421-5fd8ed6131a0" 
+                         alt="Veterinarian examining a senior dog's teeth, demonstrating proper dental care techniques for aging pets" 
+                         class="w-full h-48 object-cover rounded-t-lg"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-primary-100 text-primary px-2 py-1 rounded-full text-xs font-semibold">Senior Care</span>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Senior Pet Health Management</h3>
+                        <p class="text-text-secondary mb-4">Comprehensive guide to caring for aging pets, including common health issues and preventive measures.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-secondary">Dr. Sarah Mitchell</span>
+                            <span class="text-primary font-semibold hover:text-primary-600 transition-colors cursor-pointer">Read Guide →</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guide 2 -->
+                <div class="card card-hover">
+                    <img src="https://images.unsplash.com/photo-1700665537650-1bf37979aae0" 
+                         alt="Young puppy receiving vaccination from a professional veterinarian, highlighting the importance of early immunization" 
+                         class="w-full h-48 object-cover rounded-t-lg"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-secondary-100 text-secondary px-2 py-1 rounded-full text-xs font-semibold">Vaccination</span>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Complete Vaccination Guide</h3>
+                        <p class="text-text-secondary mb-4">Essential vaccination schedules and protocols for puppies, kittens, and adult pets.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-secondary">Dr. Michael Chen</span>
+                            <span class="text-secondary font-semibold hover:text-secondary-600 transition-colors cursor-pointer">Read Guide →</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Guide 3 -->
+                <div class="card card-hover">
+                    <img src="https://images.unsplash.com/photo-1655143292887-f5482d1fca87" 
+                         alt="Healthy dog running outdoors, showcasing the benefits of regular exercise and preventive health care" 
+                         class="w-full h-48 object-cover rounded-t-lg"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                    <div class="p-6">
+                        <div class="flex items-center mb-3">
+                            <span class="bg-accent-100 text-accent px-2 py-1 rounded-full text-xs font-semibold">Prevention</span>
+                        </div>
+                        <h3 class="text-xl font-inter font-semibold text-text-primary mb-3">Preventive Health Protocols</h3>
+                        <p class="text-text-secondary mb-4">Proactive health strategies to prevent common diseases and maintain optimal wellness.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm text-text-secondary">Dr. Emily Rodriguez</span>
+                            <span class="text-accent font-semibold hover:text-accent-600 transition-colors cursor-pointer">Read Guide →</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Health Success Stories -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Health Success Stories
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Real transformations from pet owners who prioritized preventive health care
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Success Story 1 -->
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1660849636221-9a1fc064d57a" 
+                             alt="Jennifer Martinez, happy pet owner smiling with her healthy rescued golden retriever" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Jennifer Martinez</h4>
+                            <p class="text-sm text-text-secondary">Golden Retriever Owner</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "The early detection protocols helped us catch Max's hip dysplasia before it became severe. The preventive care plan has kept him active and pain-free at 8 years old."
+                    </p>
+                    <div class="flex items-center text-sm text-success">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Early Detection Success
+                    </div>
+                </div>
+
+                <!-- Success Story 2 -->
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1733821539830-2dd8b567c63f" 
+                             alt="Robert Chen, dedicated cat owner holding his healthy tabby cat after successful treatment" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Robert Chen</h4>
+                            <p class="text-sm text-text-secondary">Cat Parent</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "The medication tracking system was a lifesaver during Luna's diabetes treatment. We never missed a dose, and her blood sugar is now perfectly controlled."
+                    </p>
+                    <div class="flex items-center text-sm text-success">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Chronic Condition Management
+                    </div>
+                </div>
+
+                <!-- Success Story 3 -->
+                <div class="card p-6">
+                    <div class="flex items-center mb-4">
+                        <img src="https://images.unsplash.com/photo-1582243310194-47fded68cefd" 
+                             alt="Lisa Thompson, experienced dog trainer with her healthy German Shepherd, demonstrating successful preventive care" 
+                             class="w-12 h-12 rounded-full object-cover mr-4"
+                             onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                        <div>
+                            <h4 class="font-semibold text-text-primary">Lisa Thompson</h4>
+                            <p class="text-sm text-text-secondary">Multi-Pet Household</p>
+                        </div>
+                    </div>
+                    <p class="text-text-secondary italic mb-4">
+                        "Managing health records for three pets was overwhelming until I found this system. Now all their vaccinations, checkups, and medications are perfectly organized."
+                    </p>
+                    <div class="flex items-center text-sm text-success">
+                        <svg class="w-4 h-4 mr-1" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                        </svg>
+                        Multi-Pet Organization
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Premium Health Tools CTA -->
+    <section class="py-16 bg-gradient-to-br from-primary-50 to-secondary-50">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                Unlock Advanced Health Monitoring
+            </h2>
+            <p class="text-lg text-text-secondary mb-8 max-w-2xl mx-auto">
+                Get access to AI-powered health assessments, personalized care plans, direct vet consultations, and comprehensive health analytics for optimal pet wellness.
+            </p>
+            
+            <div class="grid md:grid-cols-3 gap-6 mb-8">
+                <div class="text-center">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">AI Health Insights</h3>
+                    <p class="text-sm text-text-secondary">Advanced pattern recognition for early health detection</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-secondary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">Vet Consultations</h3>
+                    <p class="text-sm text-text-secondary">Direct access to certified veterinarians 24/7</p>
+                </div>
+                
+                <div class="text-center">
+                    <div class="bg-accent-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-3">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zM14 9a1 1 0 00-1 1v6a1 1 0 001 1h2a1 1 0 001-1v-6a1 1 0 00-1-1h-2z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="font-semibold text-text-primary mb-2">Health Analytics</h3>
+                    <p class="text-sm text-text-secondary">Comprehensive health trends and progress tracking</p>
+                </div>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="btn-primary">
+                    Start Premium Trial
+                </button>
+                <button class="bg-white text-primary border-2 border-primary px-6 py-3 rounded-lg font-inter font-semibold hover:bg-primary-50 transition-colors">
+                    View Pricing Plans
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-inter font-bold">PetCare Hub</span>
+                    </div>
+                    <p class="text-primary-200">
+                        Your trusted companion for expert pet care guidance and community support.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="new_owner_guide.html" class="text-primary-200 hover:text-white transition-colors">New Owner Guide</a></li>
+                        <li><a href="food_nutrition_center.html" class="text-primary-200 hover:text-white transition-colors">Nutrition Center</a></li>
+                        <li><a href="environment_setup.html" class="text-primary-200 hover:text-white transition-colors">Environment Setup</a></li>
+                        <li><a href="health_care_essentials.html" class="text-primary-200 hover:text-white transition-colors">Health Care</a></li>
+                    </ul>
+                </div>
+
+                <!-- Resources -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="emergency_care_guide.html" class="text-primary-200 hover:text-white transition-colors">Emergency Care</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Community Forum</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Expert Directory</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Care Calculators</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Get Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">24/7 Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Expert Consultations</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Newsletter</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-600 mt-12 pt-8 text-center">
+                <p class="text-primary-200">
+                    © 2025 PetCare Hub. All Rights Reserved. | Trusted by 50,000+ pet parents worldwide.
+                </p>
+            </div>
+        </div>
+    </footer>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>

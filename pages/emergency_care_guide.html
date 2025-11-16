@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Care Guide - PetCare Hub</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Critical emergency care protocols and life-saving information for pet emergencies. Quick access to symptoms, treatments, and emergency contacts.">
+  
+  <script type="module" src="https://static.rocket.new/rocket-web.js?_cfg=https%3A%2F%2Fpetcarehu8300back.builtwithrocket.new&_be=https%3A%2F%2Fapplication.rocket.new&_v=0.1.9"></script>
+  <script type="module" src="https://static.rocket.new/rocket-shot.js?v=0.0.1"></script>
+  </head>
+<body class="bg-background">
+    <!-- Critical Emergency Banner -->
+    <div class="bg-error text-white py-3 px-4 sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <svg class="w-6 h-6 animate-pulse" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-lg font-inter font-bold">EMERGENCY CARE GUIDE</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="tel:911" class="bg-white text-error px-4 py-2 rounded-lg font-inter font-bold hover:bg-error-50 transition-colors">
+                    Call 911
+                </a>
+                <button onclick="navigator.geolocation.getCurrentPosition(findNearbyVets)" class="bg-error-600 text-white px-4 py-2 rounded-lg font-inter font-semibold hover:bg-error-700 transition-colors">
+                    Find Nearby Vets
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="bg-white shadow-soft">
+        <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <svg class="w-10 h-10 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                    <span class="ml-2 text-2xl font-inter font-bold text-primary">PetCare Hub</span>
+                </div>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="homepage.html" class="text-text-secondary hover:text-primary transition-colors">Home</a>
+                    <a href="new_owner_guide.html" class="text-text-secondary hover:text-primary transition-colors">New Owner Guide</a>
+                    <a href="food_nutrition_center.html" class="text-text-secondary hover:text-primary transition-colors">Nutrition</a>
+                    <a href="environment_setup.html" class="text-text-secondary hover:text-primary transition-colors">Environment</a>
+                    <a href="health_care_essentials.html" class="text-text-secondary hover:text-primary transition-colors">Health Care</a>
+                    <a href="emergency_care_guide.html" class="text-error font-semibold border-b-2 border-error pb-1">Emergency Care</a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden">
+                    <button class="text-text-secondary hover:text-primary">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Emergency Quick Actions -->
+    <section class="bg-error-50 py-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl font-inter font-bold text-text-primary mb-4">
+                    Emergency Care Protocols
+                </h1>
+                <p class="text-xl text-text-secondary max-w-3xl mx-auto">
+                    Critical information organized for immediate access during pet emergencies. Stay calm, act quickly, and follow these expert-approved protocols.
+                </p>
+            </div>
+
+            <!-- Quick Action Grid -->
+            <div class="grid md:grid-cols-4 gap-6">
+                <div class="emergency-card p-6 text-center bg-white">
+                    <div class="bg-error-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-error" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-bold text-text-primary mb-2">Emergency Hotline</h3>
+                    <p class="text-sm text-text-secondary mb-4">24/7 Pet Poison Control</p>
+                    <a href="tel:1-888-426-4435" class="bg-error text-white px-4 py-2 rounded-lg font-semibold hover:bg-error-600 transition-colors">
+                        Call Now
+                    </a>
+                </div>
+
+                <div class="emergency-card p-6 text-center bg-white">
+                    <div class="bg-warning-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-bold text-text-primary mb-2">Find Nearest Vet</h3>
+                    <p class="text-sm text-text-secondary mb-4">GPS-based emergency locator</p>
+                    <button onclick="findNearbyVets()" class="bg-warning text-white px-4 py-2 rounded-lg font-semibold hover:bg-warning-600 transition-colors">
+                        Locate Now
+                    </button>
+                </div>
+
+                <div class="emergency-card p-6 text-center bg-white">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-bold text-text-primary mb-2">Symptom Checker</h3>
+                    <p class="text-sm text-text-secondary mb-4">Quick assessment tool</p>
+                    <button onclick="openSymptomChecker()" class="bg-primary text-white px-4 py-2 rounded-lg font-semibold hover:bg-primary-600 transition-colors">
+                        Check Now
+                    </button>
+                </div>
+
+                <div class="emergency-card p-6 text-center bg-white">
+                    <div class="bg-accent-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-lg font-inter font-bold text-text-primary mb-2">Download Guide</h3>
+                    <p class="text-sm text-text-secondary mb-4">Offline emergency protocols</p>
+                    <button onclick="downloadEmergencyGuide()" class="bg-accent text-white px-4 py-2 rounded-lg font-semibold hover:bg-accent-600 transition-colors">
+                        Download
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Critical Symptoms Recognition -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Recognize Critical Emergency Symptoms
+                </h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    These symptoms require immediate veterinary attention. Do not wait - contact emergency services immediately.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Breathing Issues -->
+                <div class="card p-6 border-l-4 border-error">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-error-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-bold text-text-primary">Breathing Difficulties</h3>
+                    </div>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Gasping or open-mouth breathing
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Blue or pale gums
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Excessive panting when not hot
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Choking or gagging sounds
+                        </li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-error-50 rounded-lg">
+                        <p class="text-sm font-semibold text-error">IMMEDIATE ACTION: Keep airways clear, get to vet immediately</p>
+                    </div>
+                </div>
+
+                <!-- Neurological Issues -->
+                <div class="card p-6 border-l-4 border-warning">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-warning-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path d="M9 2a1 1 0 000 2h2a1 1 0 100-2H9z"></path>
+                                <path fill-rule="evenodd" d="M4 5a2 2 0 012-2h8a2 2 0 012 2v6a2 2 0 01-2 2H6a2 2 0 01-2-2V5zm3 1a1 1 0 000 2h.01a1 1 0 100-2H7zm3 0a1 1 0 000 2h3a1 1 0 100-2h-3zm-3 4a1 1 0 100 2h.01a1 1 0 100-2H7zm3 0a1 1 0 100 2h3a1 1 0 100-2h-3z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-bold text-text-primary">Neurological Signs</h3>
+                    </div>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-warning rounded-full mr-3"></span>
+                            Seizures or convulsions
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-warning rounded-full mr-3"></span>
+                            Loss of consciousness
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-warning rounded-full mr-3"></span>
+                            Inability to stand or walk
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-warning rounded-full mr-3"></span>
+                            Severe disorientation
+                        </li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-warning-50 rounded-lg">
+                        <p class="text-sm font-semibold text-warning">IMMEDIATE ACTION: Keep pet safe, time seizures, seek emergency care</p>
+                    </div>
+                </div>
+
+                <!-- Trauma & Bleeding -->
+                <div class="card p-6 border-l-4 border-error">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-error-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3 3a1 1 0 000 2v8a2 2 0 002 2h2.586l-1.293 1.293a1 1 0 101.414 1.414L10 15.414l2.293 2.293a1 1 0 001.414-1.414L12.414 15H15a2 2 0 002-2V5a1 1 0 100-2H3zm11.707 4.707a1 1 0 00-1.414-1.414L10 9.586 8.707 8.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-bold text-text-primary">Trauma & Bleeding</h3>
+                    </div>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Severe bleeding that won't stop
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Hit by car or major trauma
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Visible broken bones
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Deep wounds or lacerations
+                        </li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-error-50 rounded-lg">
+                        <p class="text-sm font-semibold text-error">IMMEDIATE ACTION: Apply pressure to bleeding, transport carefully</p>
+                    </div>
+                </div>
+
+                <!-- Poisoning -->
+                <div class="card p-6 border-l-4 border-accent">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-accent-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-bold text-text-primary">Poisoning Signs</h3>
+                    </div>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                            Vomiting or diarrhea
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                            Excessive drooling
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                            Lethargy or weakness
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-accent rounded-full mr-3"></span>
+                            Loss of coordination
+                        </li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-accent-50 rounded-lg">
+                        <p class="text-sm font-semibold text-accent">IMMEDIATE ACTION: Call poison control, bring substance packaging</p>
+                    </div>
+                </div>
+
+                <!-- Bloat/GDV -->
+                <div class="card p-6 border-l-4 border-error">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-error-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-bold text-text-primary">Bloat/GDV</h3>
+                    </div>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Distended, hard abdomen
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Unproductive retching
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Restlessness and pacing
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-error rounded-full mr-3"></span>
+                            Rapid breathing
+                        </li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-error-50 rounded-lg">
+                        <p class="text-sm font-semibold text-error">IMMEDIATE ACTION: Emergency surgery needed - get to vet NOW</p>
+                    </div>
+                </div>
+
+                <!-- Heat Stroke -->
+                <div class="card p-6 border-l-4 border-warning">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-warning-100 p-3 rounded-lg mr-4">
+                            <svg class="w-6 h-6 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-xl font-inter font-bold text-text-primary">Heat Stroke</h3>
+                    </div>
+                    <ul class="space-y-2 text-text-secondary">
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-warning rounded-full mr-3"></span>
+                            Excessive panting
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-warning rounded-full mr-3"></span>
+                            Bright red gums
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-warning rounded-full mr-3"></span>
+                            Vomiting or diarrhea
+                        </li>
+                        <li class="flex items-center">
+                            <span class="w-2 h-2 bg-warning rounded-full mr-3"></span>
+                            Collapse or weakness
+                        </li>
+                    </ul>
+                    <div class="mt-4 p-3 bg-warning-50 rounded-lg">
+                        <p class="text-sm font-semibold text-warning">IMMEDIATE ACTION: Cool gradually with water, get to vet</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- First Aid Protocols -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Emergency First Aid Protocols
+                </h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    Step-by-step emergency procedures to stabilize your pet before veterinary care. These are temporary measures - always seek professional help.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12">
+                <!-- CPR Protocol -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-error-100 p-4 rounded-xl mr-4">
+                            <svg class="w-8 h-8 text-error" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-inter font-bold text-text-primary">Pet CPR Protocol</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-error text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Check Responsiveness</h4>
+                                <p class="text-text-secondary">Tap pet gently and call their name. Check for breathing and pulse.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-error text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Position Pet</h4>
+                                <p class="text-text-secondary">Place on firm surface, right side down. Extend head and neck.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-error text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">3</div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Chest Compressions</h4>
+                                <p class="text-text-secondary">Small pets: Use one hand. Large pets: Use both hands. Compress 1/3 to 1/2 chest width.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-error text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">4</div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Rescue Breathing</h4>
+                                <p class="text-text-secondary">Close mouth, breathe into nose. 30 compressions : 2 breaths ratio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-error-50 rounded-lg">
+                        <p class="text-sm font-semibold text-error">Continue until pet responds or you reach veterinary care</p>
+                    </div>
+                </div>
+
+                <!-- Choking Protocol -->
+                <div class="card p-8">
+                    <div class="flex items-center mb-6">
+                        <div class="bg-warning-100 p-4 rounded-xl mr-4">
+                            <svg class="w-8 h-8 text-warning" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <h3 class="text-2xl font-inter font-bold text-text-primary">Choking Emergency</h3>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-warning text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">1</div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Open Mouth</h4>
+                                <p class="text-text-secondary">Carefully open pet's mouth and look for visible objects. Do NOT blindly reach in.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-warning text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">2</div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Remove Object</h4>
+                                <p class="text-text-secondary">If visible, use tweezers or pliers to carefully remove. Avoid pushing deeper.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-warning text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">3</div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Back Blows</h4>
+                                <p class="text-text-secondary">Small pets: Hold upside down, strike between shoulder blades. Large pets: Lift hind legs, strike back.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-warning text-white w-8 h-8 rounded-full flex items-center justify-center font-bold text-sm">4</div>
+                            <div>
+                                <h4 class="font-semibold text-text-primary mb-2">Check & Repeat</h4>
+                                <p class="text-text-secondary">Check mouth again. Repeat back blows if needed. Get to vet immediately.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-6 p-4 bg-warning-50 rounded-lg">
+                        <p class="text-sm font-semibold text-warning">If unsuccessful after 3 attempts, get to emergency vet immediately</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Contacts & Resources -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Emergency Contacts & Resources
+                </h2>
+                <p class="text-lg text-text-secondary">
+                    Save these critical numbers and keep them easily accessible
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Poison Control -->
+                <div class="card p-6 text-center">
+                    <div class="bg-error-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-error" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-bold text-text-primary mb-2">Pet Poison Control</h3>
+                    <p class="text-text-secondary mb-4">24/7 Emergency Hotline</p>
+                    <a href="tel:1-888-426-4435" class="text-2xl font-bold text-error hover:text-error-600 transition-colors">
+                        1-888-426-4435
+                    </a>
+                    <p class="text-sm text-text-secondary mt-2">$95 consultation fee may apply</p>
+                </div>
+
+                <!-- Emergency Vet -->
+                <div class="card p-6 text-center">
+                    <div class="bg-primary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-bold text-text-primary mb-2">Emergency Vet Locator</h3>
+                    <p class="text-text-secondary mb-4">Find nearest 24/7 clinic</p>
+                    <button onclick="findNearbyVets()" class="btn-primary">
+                        Find Nearby Vets
+                    </button>
+                    <p class="text-sm text-text-secondary mt-2">GPS-based emergency locator</p>
+                </div>
+
+                <!-- Your Vet -->
+                <div class="card p-6 text-center">
+                    <div class="bg-secondary-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <svg class="w-8 h-8 text-secondary" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-inter font-bold text-text-primary mb-2">Your Veterinarian</h3>
+                    <p class="text-text-secondary mb-4">Primary care contact</p>
+                    <div class="space-y-2">
+                        <input type="text" placeholder="Vet Name" class="input-field text-center">
+                        <input type="tel" placeholder="Phone Number" class="input-field text-center">
+                    </div>
+                    <button class="btn-secondary mt-4">Save Contact</button>
+                </div>
+            </div>
+
+            <!-- Emergency Kit Checklist -->
+            <div class="mt-16">
+                <div class="card p-8">
+                    <div class="text-center mb-8">
+                        <h3 class="text-2xl font-inter font-bold text-text-primary mb-4">
+                            Emergency Kit Essentials
+                        </h3>
+                        <p class="text-lg text-text-secondary">
+                            Keep these items readily available for emergency situations
+                        </p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <div>
+                            <h4 class="font-inter font-bold text-text-primary mb-4 flex items-center">
+                                <svg class="w-5 h-5 text-primary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                First Aid Supplies
+                            </h4>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-primary">
+                                    Gauze pads and rolls
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-primary">
+                                    Medical tape
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-primary">
+                                    Antiseptic wipes
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-primary">
+                                    Digital thermometer
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-primary">
+                                    Tweezers
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-inter font-bold text-text-primary mb-4 flex items-center">
+                                <svg class="w-5 h-5 text-secondary mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Medications & Tools
+                            </h4>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-secondary">
+                                    Pet's current medications
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-secondary">
+                                    Hydrogen peroxide (3%)
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-secondary">
+                                    Saline solution
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-secondary">
+                                    Muzzle or towel
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-secondary">
+                                    Flashlight
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h4 class="font-inter font-bold text-text-primary mb-4 flex items-center">
+                                <svg class="w-5 h-5 text-accent mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Important Documents
+                            </h4>
+                            <ul class="space-y-2 text-text-secondary">
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-accent">
+                                    Vet contact information
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-accent">
+                                    Pet's medical records
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-accent">
+                                    Emergency contact list
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-accent">
+                                    Pet photos (for ID)
+                                </li>
+                                <li class="flex items-center">
+                                    <input type="checkbox" class="mr-3 text-accent">
+                                    This emergency guide
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Prevention & Preparedness -->
+    <section class="py-16 bg-surface">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-inter font-bold text-text-primary mb-4">
+                    Prevention & Preparedness
+                </h2>
+                <p class="text-lg text-text-secondary max-w-3xl mx-auto">
+                    The best emergency is the one that never happens. Take these proactive steps to keep your pet safe.
+                </p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <img src="https://images.unsplash.com/photo-1666014920397-8b1ac0a2b23e" 
+                         alt="Veterinarian conducting a routine health checkup on a golden retriever, demonstrating preventive care practices" 
+                         class="rounded-2xl shadow-gentle w-full h-96 object-cover"
+                         onerror="this.src='https://images.unsplash.com/photo-1584824486509-112e4181ff6b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'; this.onerror=null;">
+                </div>
+
+                <div class="space-y-8">
+                    <div class="card p-6">
+                        <h3 class="text-xl font-inter font-bold text-text-primary mb-4">Regular Health Monitoring</h3>
+                        <ul class="space-y-3 text-text-secondary">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Schedule annual wellness exams
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Keep vaccinations current
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Monitor weight and appetite changes
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-success mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                                </svg>
+                                Learn your pet's normal behavior
+                            </li>
+                        </ul>
+                        <a href="health_care_essentials.html" class="btn-primary mt-4">
+                            Learn More About Health Care
+                        </a>
+                    </div>
+
+                    <div class="card p-6">
+                        <h3 class="text-xl font-inter font-bold text-text-primary mb-4">Home Safety Measures</h3>
+                        <ul class="space-y-3 text-text-secondary">
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-warning mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                </svg>
+                                Pet-proof your home thoroughly
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-warning mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                </svg>
+                                Secure toxic substances safely
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-warning mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                </svg>
+                                Install safety gates and barriers
+                            </li>
+                            <li class="flex items-center">
+                                <svg class="w-5 h-5 text-warning mr-3" fill="currentColor" viewBox="0 0 20 20">
+                                    <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"></path>
+                                </svg>
+                                Keep emergency numbers visible
+                            </li>
+                        </ul>
+                        <a href="environment_setup.html" class="btn-secondary mt-4">
+                            Environment Safety Guide
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <!-- Brand -->
+                <div class="space-y-4">
+                    <div class="flex items-center">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                        <span class="ml-2 text-xl font-inter font-bold">PetCare Hub</span>
+                    </div>
+                    <p class="text-primary-200">
+                        Your trusted companion for expert pet care guidance and emergency support.
+                    </p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="homepage.html" class="text-primary-200 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="new_owner_guide.html" class="text-primary-200 hover:text-white transition-colors">New Owner Guide</a></li>
+                        <li><a href="food_nutrition_center.html" class="text-primary-200 hover:text-white transition-colors">Nutrition Center</a></li>
+                        <li><a href="environment_setup.html" class="text-primary-200 hover:text-white transition-colors">Environment Setup</a></li>
+                    </ul>
+                </div>
+
+                <!-- Emergency Resources -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Emergency Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="emergency_care_guide.html" class="text-primary-200 hover:text-white transition-colors">Emergency Protocols</a></li>
+                        <li><a href="health_care_essentials.html" class="text-primary-200 hover:text-white transition-colors">Health Care Guide</a></li>
+                        <li><a href="tel:1-888-426-4435" class="text-primary-200 hover:text-white transition-colors">Poison Control</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Find Emergency Vets</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-inter font-semibold mb-4">Get Support</h4>
+                    <ul class="space-y-2">
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">24/7 Help Center</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Expert Consultations</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-primary-200 hover:text-white transition-colors">Emergency Alerts</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="border-t border-primary-600 mt-12 pt-8 text-center">
+                <p class="text-primary-200">
+                    © 2025 PetCare Hub. All Rights Reserved. | Emergency care information reviewed by licensed veterinarians.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Emergency Functions -->
+    <script>
+        function findNearbyVets() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(function(position) {
+                    const lat = position.coords.latitude;
+                    const lng = position.coords.longitude;
+                    // In a real application, this would query a veterinary database
+                    alert(`Finding emergency veterinary clinics near your location (${lat.toFixed(4)}, ${lng.toFixed(4)}). In a real app, this would show nearby 24/7 veterinary clinics.`);
+                }, function(error) {
+                    alert('Unable to get your location. Please search for "emergency veterinary clinic near me" in your preferred maps application.');
+                });
+            } else {
+                alert('Geolocation is not supported by this browser. Please search for "emergency veterinary clinic near me" in your preferred maps application.');
+            }
+        }
+
+        function openSymptomChecker() {
+            alert('Symptom Checker would open here. This interactive tool would help assess your pet\'s symptoms and provide guidance on urgency level.');
+        }
+
+        function downloadEmergencyGuide() {
+            alert('Emergency guide download would start here. This would provide an offline PDF with critical emergency protocols.');
+        }
+
+        // Auto-save emergency contacts
+        function saveEmergencyContact() {
+            const vetName = document.querySelector('input[placeholder="Vet Name"]').value;
+            const vetPhone = document.querySelector('input[placeholder="Phone Number"]').value;
+            
+            if (vetName && vetPhone) {
+                localStorage.setItem('emergencyVetName', vetName);
+                localStorage.setItem('emergencyVetPhone', vetPhone);
+                alert('Emergency contact saved successfully!');
+            }
+        }
+
+        // Load saved contacts on page load
+        window.addEventListener('load', function() {
+            const savedVetName = localStorage.getItem('emergencyVetName');
+            const savedVetPhone = localStorage.getItem('emergencyVetPhone');
+            
+            if (savedVetName) {
+                document.querySelector('input[placeholder="Vet Name"]').value = savedVetName;
+            }
+            if (savedVetPhone) {
+                document.querySelector('input[placeholder="Phone Number"]').value = savedVetPhone;
+            }
+        });
+    </script>
+<script id="dhws-dataInjector" src="../public/dhws-data-injector.js"></script>
+</body>
+</html>
