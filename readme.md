@@ -78,4 +78,4 @@ The app is built with responsive design using Tailwind CSS breakpoints:
 
 - Powered by HTML and Tailwind CSS
 
-Built with CSS and HTML with ChatGPT & Aarav.
+Built with CSS and HTML with ChatGPT & Aarav,Yatharth.
